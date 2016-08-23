@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telirium.XFRenderers.TestView"
+             BackgroundColor="White"
+             Padding="20"
+             xmlns:customControls="clr-namespace:Telirium.XFRenderers;assembly=Telirium.XFRenderers">
+
+  <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Padding="10">
+    <Label Text="Music for programming:" HorizontalOptions="FillAndExpand"/>
+    <customControls:CustomPicker WidthRequest="250" HorizontalOptions="FillAndExpand">
+      <Picker.Items>
+        <x:String>Deep House</x:String>
+        <x:String>Trance</x:String>
+        <x:String>Progressive House</x:String>
+        <x:String>New Age</x:String>
+      </Picker.Items>
+      <Picker.SelectedIndex>0</Picker.SelectedIndex>
+    </customControls:CustomPicker>
+  </StackLayout>
+</ContentPage>
